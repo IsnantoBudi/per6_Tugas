@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-
 void main() => runApp(MyApp());
-
 class MyApp extends StatelessWidget {
   final appTitle = 'Contoh Drawer ';
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -111,10 +108,7 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(title: Text(title)),
       body: MyApp1(),
       drawer: Drawer(
-        // Add a ListView to the drawer. This ensures the user can scroll
-        // through the options in the drawer if there isn't enough vertical
-        // space to fit everything.
-        child: ListView(
+         child: ListView(
           // Important: Remove any padding from the ListView.
           padding: EdgeInsets.zero,
           children: <Widget>[
